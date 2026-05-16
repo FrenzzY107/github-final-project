@@ -1,2 +1,1 @@
-Simple Interest Calculator
-This project is a simple tool to compute simple interest based on user input for principal, rate of interest, and time period.
+![CI Build](https://github.com/FrenzzY107/github-final-project/actions/workflows/ci-build.yaml/badge.svg)
