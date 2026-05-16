@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python 3.9
       uses: actions/setup-python@v4
       with:
-        python-python: '3.9'
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
@@ -27,9 +27,9 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        # stop the build if there are Python syntax errors or undefined names
+        # Menghentikan build jika ada error sintaksis Python atau nama yang tidak terdefinisi
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings.
+        # exit-zero memperlakukan semua error sebagai peringatan (warning) agar pipeline tetap jalan
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
     - name: Run unit tests with nosetests
